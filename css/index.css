@@ -112,6 +112,7 @@ img {
             margin-left: 16px; 
             position: relative;
             align-items: center;
+            font-weight: 500;
             }
         .aside-header__link:hover{
             color: #7e7e82;}
