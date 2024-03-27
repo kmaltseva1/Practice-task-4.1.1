@@ -33,7 +33,9 @@ body {
     background: #F8F8F8;
     position: relative;
 }
-
+html, body {
+  height: 100%;
+}
 a {
     text-decoration: none; }
 img {
@@ -60,7 +62,9 @@ img {
     
     .aside-header {
         z-index: 10;
-        display: none;
+        display: flex;
+        box-shadow: rgba(14, 24, 80, 0.2) 16px 0px 52px;
+        /* display: none; */
         flex-direction: column;
         background-color: white;
         height: 2025px;
@@ -71,41 +75,42 @@ img {
         @media only screen and (min-width: 1120px) {
             .aside-header {
             display: flex; } }
-        .aside-header__header {
+        .aside__header {
             display: flex;
             justify-content: space-between;
             margin-top: 16px; }
-        .aside-header__back-btn {
+        .aside__back-btn {
             margin-left: 16px; }
-        .aside-header__logo {
+        .aside__logo {
             margin-right: auto;
             margin-left: 17px; }
-        .aside-header__search-btn {
+        .aside__search-btn {
             background-color: transparent;
             border: transparent;
             padding: 0;
             margin-right: 16px; }
-        .aside-header__nav-menu {
+        .aside__nav-menu {
             display: flex;
             margin-top: 32px;
-            /* margin-bottom: 250px; */
-            flex-direction: column; }
+            margin-bottom: 100%;
+            flex-direction: column;
+            justify-content: space-between; }
             @media only screen and (min-width: 320px) {
-                .aside-header__nav-menu{
-                    margin-bottom: 0px;        
+                .aside__nav-menu{
+                    margin-bottom: 100px;        
                 }
             }
             @media only screen and (min-width: 768px) {
-                .aside-header__nav-menu{
-                    margin-bottom: 250px;        
+                .aside__nav-menu{
+                    margin-bottom: 268px;        
                 }
             }
             @media only screen and (min-width: 1120px) {
-                .aside-header__nav-menu{
+                .aside__nav-menu{
                     margin-bottom: 250px;        
                 }
             }
-        .aside-header__link {
+        .aside__link {
             display: flex;
             margin-bottom: 24px;
             margin-left: 16px; 
@@ -113,9 +118,9 @@ img {
             align-items: center;
             font-weight: 500;
             }
-        .aside-header__link:hover{
+        .aside__link:hover{
             color: #7e7e82;}
-        .aside-header__link:hover::before {
+        .aside__link:hover::before {
             content: "";
             display: block;
             position: absolute;
@@ -126,33 +131,33 @@ img {
             background: #41F6D7;
         }
         
-        .aside-header__contact {
+        .aside__contact {
             display: flex; }
-        .aside-header__select-language {
+        .aside__select-language {
             margin-top: 10px;
             margin-bottom: 30px; 
             font-weight: 500;}
         .select-language__item:hover{
             color:#7E7E82;
         }
-        .aside-header__contact-wrapper {
+        .aside__contact-wrapper {
             display: flex;
             flex-direction: column; }
-        .aside-header__mail {
+        .aside__mail {
             margin-bottom: 14px;
             margin-top: 12px;
             color: black;
             font-size: 16px; 
             font-weight: 500;}
-        .aside-header__phone {
+        .aside__phone {
             color: black;
             font-family: 'TT Lakes';
             font-size: 24px; 
             font-weight: 700;}
-        .aside-header__footer {
+        .aside__footer {
             margin-left: 16px; }
         .aside-header .contact__icon {
             margin-right: 16px; }
         @media only screen and (min-width: 1120px) {
-            .aside-header__back-btn {
+            .aside__back-btn {
             display: none; } }
