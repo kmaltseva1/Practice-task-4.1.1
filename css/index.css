@@ -60,7 +60,7 @@ img {
         .wrapper {
         flex-direction: row; } }
     
-    .aside-header {
+    .aside {
         z-index: 10;
         display: flex;
         box-shadow: rgba(14, 24, 80, 0.2) 16px 0px 52px;
@@ -70,10 +70,10 @@ img {
         height: 2025px;
         width: 100vw; }
         @media only screen and (min-width: 360px) {
-            .aside-header {
+            .aside {
             width: 320px; } }
         @media only screen and (min-width: 1120px) {
-            .aside-header {
+            .aside {
             display: flex; } }
         .aside__header {
             display: flex;
